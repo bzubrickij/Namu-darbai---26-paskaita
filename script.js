@@ -26,7 +26,7 @@ buttonAdd.addEventListener("click", function () {
     inputPavarde.value.length == 0 &&
     inputAmzius.value.length == 0
   ) {
-    alert(`PO PARALIAIS!!!Prasome ivesti bent KA NORS....!`);
+    alert(`PO PARALIAIS!!!Visi laukialiai tusti, RIMTAI....!?`);
     for (let x of allInputs) {
       x.classList.toggle("blink");
     }
@@ -37,10 +37,7 @@ buttonAdd.addEventListener("click", function () {
       }
     }, 3000);
   } else if (inputAmzius.value == 0) {
-    alert(
-      "Rimtai!? Kas leido sita kudiki prie kompo?! Kur ritasi sis pasaulis....!?"
-    );
-
+    alert("Metus prasom parasyt normaliai ir kad ne 0, ok!?");
     for (let x of allInputs) {
       x.classList.toggle("blink");
     }
@@ -54,9 +51,8 @@ buttonAdd.addEventListener("click", function () {
     for (let x of allInputs) {
       x.classList.toggle("blink");
     }
-
     alert(
-      "Rimtai!? Dv nereikia...Gimk, uzaug - tada galesi pilditis kiek nori formu 😊"
+      "Rimtai!? Dv nereikia...Gimk, uzaug - tada galesi pildit kiek nori formu 😊"
     );
     setTimeout(function () {
       for (let x of allInputs) {
@@ -88,32 +84,34 @@ buttonRemoveLast.addEventListener("click", function () {
   if (table.rows.length > 1) {
     var removeRowLast = table.deleteRow(table.rows.length - 1);
     console.log(removeRowLast);
-  } else alert("Na ir ka tu cia dabar trint ruoses?!");
-  for (let x of rowOne) {
-    x.classList.toggle("blink");
-  }
-
-  setTimeout(function () {
+  } else {
+    alert("Na ir ka tu cia dabar trint ruoses?!");
     for (let x of rowOne) {
-      x.classList.remove("blink");
+      x.classList.toggle("blink");
     }
-  }, 3000);
+    setTimeout(function () {
+      for (let x of rowOne) {
+        x.classList.remove("blink");
+      }
+    }, 3000);
+  }
 });
 //----------------------Remove First-------------------------------
 buttonRemoveFirst.addEventListener("click", function () {
   if (table.rows.length > 1) {
     var removeRowFirst = table.deleteRow(1);
     console.log(removeRowFirst);
-  } else alert("Na ir ka tu cia dabar trint ruoses?!");
-  for (let x of rowOne) {
-    x.classList.toggle("blink");
-  }
-
-  setTimeout(function () {
+  } else {
+    alert("Na ir ka tu cia dabar trint ruoses?!");
     for (let x of rowOne) {
-      x.classList.remove("blink");
+      x.classList.toggle("blink");
     }
-  }, 3000);
+    setTimeout(function () {
+      for (let x of rowOne) {
+        x.classList.remove("blink");
+      }
+    }, 3000);
+  }
 });
 //----------------------Remove First & Last-------------------------------
 buttonRemoveFirstAndLast.addEventListener("click", function () {
@@ -122,14 +120,16 @@ buttonRemoveFirstAndLast.addEventListener("click", function () {
     var removeRowLast = table.deleteRow(table.rows.length - 1);
     console.log(removeRowFirst);
     console.log(removeRowLast);
-  } else alert("Na ir ka tu cia dabar trint ruoses?!");
-  for (let x of rowOne) {
-    x.classList.toggle("blink");
-  }
-
-  setTimeout(function () {
+  } else {
+    alert("Na ir ka tu cia dabar trint ruoses?!");
     for (let x of rowOne) {
-      x.classList.remove("blink");
+      x.classList.toggle("blink");
     }
-  }, 3000);
+
+    setTimeout(function () {
+      for (let x of rowOne) {
+        x.classList.remove("blink");
+      }
+    }, 3000);
+  }
 });

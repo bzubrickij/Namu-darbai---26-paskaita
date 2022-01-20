@@ -47,6 +47,10 @@ button {
   margin-top: 5px;
   border: none;
 }
+
+button:hover {
+  cursor: pointer;
+}
 table {
   width: 611px;
   margin: 0 auto;
